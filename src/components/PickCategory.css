@@ -1,0 +1,20 @@
+#category {
+  text-align: center;
+  max-width: 500px;
+}
+
+#category h2,
+#category p {
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+#category p {
+  color: #ecd7d7;
+}
+
+#category button {
+  display: flex;
+  background-color: #f8c660;
+  justify-content: center;
+}

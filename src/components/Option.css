@@ -1,0 +1,44 @@
+.option {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.option.selected {
+  background-color: #888484;
+}
+
+.option.correct {
+  background-color: #4caf50;
+  color: white;
+}
+
+.option.wrong {
+  background-color: #e62618;
+  color: white;
+}
+
+.option:hover {
+  transform: scale(1.05);
+}
+
+.option:active {
+  transform: scale(0.95);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .option {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .option {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+}

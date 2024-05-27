@@ -1,0 +1,130 @@
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+/* Container for options */
+#options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background-color: #004643;
+  margin: 25px;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  margin-top: 0;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.back-button:hover {
+  background-color: #2a3f4b;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.back-button:active {
+  transform: scale(0.95);
+}
+
+/* Skip and Next button styling */
+.skip-button,
+.next-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.skip-button:hover,
+.next-button:hover {
+  background-color: #f8c660;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.skip-button:active,
+.next-button:active {
+  transform: scale(0.95);
+}
+
+#question {
+  background-color: #004643;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #options-container {
+    margin: 15px;
+    gap: 10px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .back-button {
+    top: 5px;
+    left: 5px;
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .skip-button,
+  .next-button {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-container {
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .back-button {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  .skip-button,
+  .next-button {
+    padding: 6px 12px;
+  }
+}

@@ -1,0 +1,72 @@
+/* GameOver.css */
+
+#gameover {
+  text-align: center;
+  padding: 5px;
+}
+
+.player-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.player-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin: 20px;
+}
+
+.player-name-score {
+  text-align: left;
+}
+
+.ranking {
+  margin-top: 20px;
+}
+
+.ranking ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ranking-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8c660;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.ranking-position {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.ranking-name {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.ranking-score {
+  font-weight: bold;
+}
+
+.reset-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f8c660;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.reset-button:hover {
+  background-color: #cc0000;
+}

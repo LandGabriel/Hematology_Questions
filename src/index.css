@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+body,
+html {
+  min-height: 100vh;
+  height: 100%;
+  background-color: #004643;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  border-radius: 15px;
+  border: 1px solid #f8c660;
+  background-color: #ffad09;
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+button:hover {
+  background: #e4ac3b;
+}
